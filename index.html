@@ -10,7 +10,29 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <h1><img src="./assets/images/logo.png" alt="pokemonH1" /></h1>
+    <h1>
+      <img src="./assets/images/logo.png" alt="pokemonH1" />
+    </h1>
+
+    <nav>
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Pokemon"
+          id="input-poke"
+          name="input-poke"
+          autofocus
+        />
+        <button>Search</button>
+      </div>
+      <div class="search">
+        <select name="select-poke" id="select-poke">
+          <option value="null">Type</option>
+          <option value="demo-poke">demo-poke</option>
+        </select>
+        <button>Search</button>
+      </div>
+    </nav>
 
     <script type="module" src="./js/app.js"></script>
   </body>
