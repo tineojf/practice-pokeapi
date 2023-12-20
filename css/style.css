@@ -2,8 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #e2e1e1;
 }
 
+/* ! Delete */
 img {
-  max-width: 100%;
+  width: 265px;
+  height: 96px;
+}
+
+h1 {
+  width: 100vw;
+  height: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 > img {
+  width: 265px;
+  height: 96px;
 }
