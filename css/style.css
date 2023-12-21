@@ -1,6 +1,7 @@
 :root {
   --color-primary: #ffc107;
   --color-secondary: #554e4e;
+  --color-button: #0069d9;
 }
 * {
   margin: 0;
@@ -39,19 +40,23 @@ nav > div.search {
   align-items: center;
   align-content: stretch;
 
-  background-color: var(--color-primary);
   margin: 20px;
   padding: 24px 0;
-  height: 70px;
+  height: 66px;
+  background-color: var(--color-primary);
   color: black;
   border-radius: 32px;
   font-size: 1.5rem;
 }
+nav > div.search:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
 nav > div.search > input {
   width: 60%;
-  border: none;
+  margin-left: 20px;
   background-color: var(--color-primary);
+  border: none;
   font-size: 1.5rem;
 }
 nav > div.search > input::placeholder {
@@ -59,16 +64,20 @@ nav > div.search > input::placeholder {
 }
 
 nav > div.search > button {
+  margin-left: 10px;
+  margin-right: 10px;
   padding: 16px;
-  border-radius: 20px;
-  background-color: #0b07ff;
+  background-color: var(--color-button);
   color: white;
-  font-size: 1rem;
   border: none;
+  border-radius: 32px;
+  font-size: 1rem;
   font-weight: bold;
+  cursor: pointer;
 }
 
 nav > div.search > select {
+  margin-left: 20px;
   width: 60%;
   background-color: var(--color-primary);
   color: var(--color-secondary);
